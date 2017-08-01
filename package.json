@@ -11,6 +11,10 @@
   "dependencies": {
     "express": "^4.14.1",
     "flockos": "0.0.6",
-    "simple-text-parser": "^1.0.0"
+    "simple-text-parser": "^1.0.0",
+    "mysql": "2.14.0",
+    "node-cron": "1.2.0",
+    "async": "2.5.0",
+    "config": "1.26.1"
   }
 }

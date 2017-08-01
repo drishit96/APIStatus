@@ -4,7 +4,7 @@ var express = require('express');
 var CronJob = require('cron').CronJob;
 var https = require('https');
 var mysql = require('mysql');
-var async = require('async');
+
 var connection  = mysql.createConnection({
   host     : '',
   user     : '',
@@ -108,7 +108,6 @@ function checkStatus() {
 
 //}
 
-//var notify = //async.waterfall([
 var notify = function (siteToCheck) {
     connection.query('SELECT userid from Subscription where site=?', siteToCheck, function (error, results, fields) {
     if (error) throw error;
